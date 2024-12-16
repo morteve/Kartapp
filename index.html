@@ -21,6 +21,12 @@
         // JavaScript for å initialisere kartet
         const map = L.map('map').setView([59.9139, 10.7521], 13); // Sentrert på Oslo med zoomnivå 13
 
+        // Legg til et OpenStreetMap-lag som bakgrunnskart
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
         // Legg til et OpenSeaMap-lag
         L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
             maxZoom: 18,
