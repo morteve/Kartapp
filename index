@@ -19,7 +19,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // JavaScript for å initialisere kartet
-        const map = L.map('map').setView([59.9139, 10.7522], 13); // Sentrert på Oslo med zoomnivå 13
+        const map = L.map('map').setView([59.9139, 10.7521], 13); // Sentrert på Oslo med zoomnivå 13
 
         // Legg til et OSM-lag
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
